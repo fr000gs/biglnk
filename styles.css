@@ -10,10 +10,13 @@ body {
   height: 100vh;
 }
 
-/* Container styling */
+/* Container styling for horizontal scroll */
 .container {
   display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents the boxes from wrapping to the next line */
   gap: 20px;
+  padding-bottom: 10px; /* Adds padding to make space for scrollbar */
 }
 
 /* Box styling */
@@ -24,6 +27,7 @@ body {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 250px;
+  flex: 0 0 auto; /* Ensures boxes stay in a single line */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -53,4 +57,18 @@ body {
 /* Hover effect for span elements */
 .box:hover span {
   background-color: #003f7f;
+}
+
+/* Custom scrollbar styling */
+.container::-webkit-scrollbar {
+  height: 8px; /* Adjusts scrollbar height */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #007BFF; /* Scrollbar color */
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #f4f4f4; /* Scrollbar track color */
 }
