@@ -1,0 +1,56 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Box styling */
+.box {
+  background-color: #007BFF;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for boxes */
+.box:hover {
+  transform: translateY(-5px);
+  background-color: #0056b3;
+}
+
+/* Styling for the h1 elements */
+.box h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Styling for the span elements */
+.box span {
+  display: block;
+  background-color: #0056b3;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for span elements */
+.box:hover span {
+  background-color: #003f7f;
+}
