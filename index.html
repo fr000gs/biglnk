@@ -23,5 +23,33 @@
         </a>
       </div>
     </div>
+
+    <div class="container" id="linkContainer">
+        <!-- Links will be dynamically injected here by JavaScript -->
+    </div>
+
+    <script>
+        // Store the links in a variable
+        const links = [
+            { url: 'https://example.com/link1', text: 'Link 1' },
+            { url: 'https://example.com/link2', text: 'Link 2' },
+            { url: 'https://example.com/link3', text: 'Link 3' }
+        ];
+
+        // Get the container div
+        const linkContainer = document.getElementById('linkContainer');
+
+        // Dynamically generate the HTML for each link and inject it into the container
+        links.forEach(link => {
+            const boxDiv = document.createElement('div');
+            boxDiv.className = 'box';
+            boxDiv.innerHTML = `
+                <a href="${link.url}">
+                    <h1><span>${link.text}</span></h1>
+                </a>
+            `;
+            linkContainer.appendChild(boxDiv);
+        });
+    </script>
   </body>
 </html>
