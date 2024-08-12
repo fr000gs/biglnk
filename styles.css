@@ -30,6 +30,15 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
   width: 250px;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+}
+
+/* Ensure the link covers the entire div */
+.box a {
+  display: block; /* Make the link block-level to cover the entire div */
+  color: inherit; /* Inherit the text color from the box */
+  text-decoration: none; /* Remove the underline */
 }
 
 /* Hover effect for boxes */
