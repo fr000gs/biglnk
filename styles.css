@@ -17,7 +17,7 @@ body {
   flex-direction: column; /* Stack boxes vertically */
   overflow-y: auto; /* Enables vertical scrolling */
   gap: 20px;
-  max-height: 80vh; /* Limits the container's height to allow scrolling */
+  max-height: 100vh; /* Limits the container's height to allow scrolling */
   padding-right: 10px; /* Adds padding to make space for scrollbar */
 }
 
